@@ -1,114 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Chronic Pain Research Portfolio - Thae Yadanar Oo</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #0b0f1a;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background: #141a2e;
-      padding: 1rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.5rem;
-    }
-    nav a {
-      margin-left: 1rem;
-      text-decoration: none;
-      background: #1e90ff;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      color: white;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 2rem;
-    }
-    .card {
-      background: #1a2238;
-      padding: 1.5rem;
-      border-radius: 8px;
-      margin-bottom: 2rem;
-    }
-    h2 {
-      margin-top: 0;
-    }
-    .btn {
-      display: inline-block;
-      margin: 0.5rem 0.5rem 0 0;
-      background: #1e90ff;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      font-size: 0.9rem;
-      background: #141a2e;
-      color: #aaa;
-    }
-  </style>
-</head>
-<body>
+# Exploring the Roots of Chronic Pain: Socioeconomic & Environmental Insights
 
-<header>
-  <h1>Thae Yadanar Oo</h1>
-  <nav>
-    <a class="btn" href="#downloads">Downloads</a>
-    <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx" target="_blank" rel="noopener">📄 Resume</a>
-    <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 LinkedIn</a>
-  </nav>
-</header>
+**Author:** Thae Yadanar Oo  
+**Degree:** M.S. in Business Analytics, University at Albany (SUNY)  
+**Dataset:** World Health Survey (n = 54,019)  
+**Methods:** OLS Regression, Logistic Regression, Interaction Effect Analysis
 
-<div class="container">
-  <section class="card">
-    <h2>Project Overview</h2>
-    <p>
-      Chronic pain undermines well-being and productivity globally. Beyond biology, structural determinants like income, conflict exposure, and education stratify who experiences pain and who accesses relief.
-      This project reframes chronic pain through a socio-environmental lens, integrating country-level capacity with individual-level risk factors to explain variation in body-pain intensity.
-    </p>
-  </section>
+---
 
-  <section id="downloads" class="card">
-    <h2>Downloads & Links</h2>
-    <p>Click below to view or download the project documents.</p>
-    <p>
-      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Project%20Summary.docx" target="_blank" rel="noopener">📄 Project Summary (DOCX)</a>
-      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Final%20Draft_Thae.docx" target="_blank" rel="noopener">📘 Full Project Draft (DOCX)</a>
-      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx" target="_blank" rel="noopener">📄 Resume (DOCX)</a>
-      <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 LinkedIn</a>
-    </p>
-  </section>
+## 📌 Overview
+This portfolio presents my Master’s capstone research project, which investigates the socioeconomic and environmental determinants of chronic pain across individuals and countries. While chronic pain is often approached through biomedical perspectives, this study highlights the impact of structural and demographic factors such as GDP per capita, civil conflict, education, age, and gender.
 
-  <section class="card">
-    <h2>About the Author</h2>
-    <p>
-      <strong>Thae Yadanar Oo</strong> — Data Analyst (Webologix INC), M.S. in Business Analytics (SUNY Albany).  
-      Experienced in SQL, Python, Power BI/Tableau, and applied econometrics.
-    </p>
-    <p>Albany, NY • Email: thaeyadanaroo19960524@gmail.com</p>
-  </section>
-</div>
+---
 
-<footer>
-  © 2025 Thae Yadanar Oo • Hosted on GitHub Pages
-</footer>
+## 🎯 Research Objectives
+- Assess whether higher GDP per capita is associated with lower chronic pain.
+- Evaluate the impact of living in civil conflict zones on pain levels.
+- Determine how education, age, and gender influence pain prevalence.
+- Explore interaction effects between socioeconomic and demographic factors.
 
-</body>
-</html>
+---
+
+## 📊 Data & Methodology
+- **Data Source:** World Health Survey
+- **Population:** Individuals aged 20–60 from multiple countries
+- **Variables:**  
+  - GDP per capita (log-transformed)  
+  - Civil conflict status (0/1)  
+  - Education level (ordinal)  
+  - Age (years)  
+  - Gender (female = 1)  
+  - Body pain score (1–5)
+- **Analytical Methods:**  
+  - OLS regression for continuous pain scores  
+  - Logistic regression for binary chronic pain risk  
+  - Interaction models (Age × Education, GDP × Conflict, Age × Gender)
+
+---
+
+## 📈 Key Findings
+- **GDP per capita** – Higher GDP is significantly linked to lower pain scores.
+- **Civil conflict** – Living in conflict zones increases pain prevalence.
+- **Education** – Higher education reduces reported pain.
+- **Age** – Older individuals report higher pain levels.
+- **Gender** – Females report higher pain than males.
+- **Interactions** – Education mitigates age-related pain increases; GDP buffers conflict’s impact on pain.
+
+---
+
+## 💡 Policy Implications
+- Expand healthcare access in low-GDP and conflict-affected regions.
+- Invest in education as a preventative public health measure.
+- Implement gender- and age-specific pain management programs.
+
+---
+
+## 🔗 Links
+- **Resume (DOCX):** [📄 Download Resume](https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx)  
+- **Project Summary (DOCX):** [📄 Download Project Summary](https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Project%20Summary.docx)  
+- **Full Project Draft (DOCX):** [📘 Download Full Project Draft](https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Final%20Draft_Thae.docx)  
+- **LinkedIn Profile:** [🔗 View LinkedIn](https://www.linkedin.com/in/thae-yadanar-oo-198447193/)
+
+---
+
+## 📄 License
+This project is shared for academic and professional purposes.  
+© Thae Yadanar Oo
