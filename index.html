@@ -10,68 +10,50 @@
   <style>
     :root{
       --bg:#0b1020; --text:#e8ecf7; --muted:#a8b0c6; --card:#121731;
-      --accent:#6aa8ff; --accent2:#a47cff; --ok:#38d39f; --warn:#ffd166; --danger:#ff7b7b;
+      --accent:#6aa8ff; --accent2:#a47cff; 
       --radius:16px;
     }
     *{box-sizing:border-box}
-    html,body{height:100%}
     body{
       margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      background: radial-gradient(1200px 800px at 10% -10%, #1a2552 0%, transparent 60%),
-                  radial-gradient(1000px 600px at 110% 10%, #2b154b 0%, transparent 60%), var(--bg);
+      background: var(--bg);
       color:var(--text); line-height:1.6;
     }
     a{color:var(--accent); text-decoration:none}
     a:hover{text-decoration:underline}
-    .container{ width:min(1100px,92%); margin-inline:auto }
+    .container{ width:min(900px,92%); margin-inline:auto }
     header{
-      position:sticky; top:0; z-index:20; backdrop-filter:saturate(160%) blur(10px);
-      background:linear-gradient(to bottom, rgba(11,16,32,0.9), rgba(11,16,32,0.4));
+      position:sticky; top:0; z-index:20; 
+      background:rgba(11,16,32,0.9);
       border-bottom:1px solid rgba(255,255,255,0.06);
     }
     .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0 }
-    .brand{ display:flex; align-items:center; gap:12px; font-weight:800; letter-spacing:.2px }
-    .avatar{ width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg, var(--accent), var(--accent2)); box-shadow:0 6px 30px rgba(106,168,255,0.35); }
+    .brand{ font-weight:800; letter-spacing:.2px }
     .btn{ display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:12px;
           border:1px solid rgba(255,255,255,0.12); color:var(--text); background:rgba(255,255,255,0.05); font-weight:600 }
     .btn:hover{ box-shadow:0 0 0 3px rgba(106,168,255,.25) }
     .pill{ display:inline-block; padding:4px 10px; border:1px solid rgba(255,255,255,0.12); border-radius:999px; font-size:12px; color:var(--muted) }
 
-    .hero{ padding:64px 0 18px }
-    h1{ font-size:clamp(28px, 4vw, 44px); line-height:1.15; margin:6px 0 6px }
-    .subtitle{ color:var(--muted); max-width:900px }
+    .hero{ padding:40px 0 18px }
+    h1{ font-size:clamp(28px, 4vw, 38px); line-height:1.15; margin:6px 0 6px }
+    .subtitle{ color:var(--muted); max-width:800px }
     .badges{ display:flex; flex-wrap:wrap; gap:10px; margin-top:16px }
     .badge{ font-size:13px; color:var(--text); border:1px solid rgba(255,255,255,0.12); padding:6px 10px; border-radius:999px; background:rgba(255,255,255,0.04) }
 
-    .grid{ display:grid; gap:22px }
-    @media(min-width:980px){ .grid-2{ grid-template-columns: 1.2fr .8fr } }
-
-    .card{ background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
-           border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius); padding:22px }
+    .card{ background:var(--card); border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius); padding:22px; margin-bottom:20px }
     .card h2,.card h3{ margin:0 0 8px }
     .meta{ color:var(--muted); font-size:14px }
 
-    .kpi{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:10px }
-    .kpi .item{ background:#0e1430; border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:14px }
-    .kpi .num{ font-weight:800; font-size:22px }
-    .kpi .label{ color:var(--muted); font-size:13px }
-    .list{ display:grid; gap:10px; margin:0; padding:0; list-style:none }
-    .list li{ display:flex; gap:10px; align-items:flex-start }
-    .dot{ width:9px; height:9px; margin-top:9px; border-radius:50%; background:var(--accent) }
-
-    canvas{ background:#121731; border-radius:10px; padding:10px }
-    footer{ border-top:1px solid rgba(255,255,255,0.08); margin-top:40px; padding:28px 0; color:var(--muted); font-size:14px }
+    footer{ border-top:1px solid rgba(255,255,255,0.08); margin-top:40px; padding:28px 0; color:var(--muted); font-size:14px; text-align:center }
   </style>
 </head>
 <body>
   <header>
     <div class="container nav">
-      <div class="brand"><span class="avatar" aria-hidden="true"></span> <span>Thae Yadanar Oo</span></div>
-     <nav>
-  <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/55320d1a249c9be7b30fd3b5bb38a42e18011110/Final%20Draft_Thae.docx" target="_blank" rel="noopener">
-    📘 Full Project Draft (DOCX)
-  </a>
-</nav>
+      <div class="brand">Thae Yadanar Oo</div>
+      <nav>
+        <a class="btn" href="#downloads">Downloads</a>
+      </nav>
     </div>
   </header>
 
@@ -93,163 +75,41 @@
       </div>
     </section>
 
-    <!-- OVERVIEW + QUESTIONS -->
-    <section class="grid grid-2">
-      <article class="card">
-        <h2>Project Overview</h2>
-        <p>
-          Chronic pain undermines well-being and productivity globally. Beyond biology, structural determinants like income,
-          conflict exposure, and education stratify who experiences pain and who accesses relief. This project reframes chronic
-          pain through a socio-environmental lens, integrating country-level capacity with individual-level risk factors to
-          explain variation in body-pain intensity.
-        </p>
-        <div class="kpi" role="group" aria-label="Key metrics">
-          <div class="item"><div class="num">54,019</div><div class="label">Participants</div></div>
-          <div class="item"><div class="num">5</div><div class="label">Primary predictors</div></div>
-          <div class="item"><div class="num">2</div><div class="label">Model families</div></div>
-        </div>
-      </article>
-      <aside class="card">
-        <h3>Research Questions</h3>
-        <ul class="list">
-          <li><span class="dot"></span><div>Do wealthier countries (higher GDP per capita) report <em>lower</em> average body pain?</div></li>
-          <li><span class="dot"></span><div>Does living amid <em>civil conflict</em> elevate pain risk net of demographics?</div></li>
-          <li><span class="dot"></span><div>How do <em>education</em>, <em>age</em>, and <em>gender</em> shape pain outcomes and interact?</div></li>
-        </ul>
-        <p class="meta"><strong>Dependent variable:</strong> 1–5 body pain score (higher = worse)</p>
-      </aside>
-    </section>
-
-    <!-- DATA + RESULTS -->
-    <section class="grid grid-2">
-      <article class="card">
-        <h3>Data & Methodology</h3>
-        <p><strong>Data:</strong> World Health Survey; individuals aged 20–60 with country tags. Key variables: log GDP per capita, civil conflict (0/1), education (ordinal), age, gender (female=1), body pain (1–5).</p>
-        <p><strong>Models:</strong> OLS for continuous pain scores; logistic for binary chronic-pain risk; interaction terms to test moderating effects (Age×Education, Conflict×GDP, Age×Gender). All models include controls and robust inference.</p>
-        <p class="meta">Statistical focus: effect sizes, standard errors, and joint significance; visualization via correlation heatmaps and grouped means.</p>
-      </article>
-      <aside class="card">
-        <h3>Headline Results</h3>
-        <ul class="list">
-          <li><span class="dot"></span><div><strong>GDP per capita ↓ pain:</strong> Higher GDP significantly predicts lower body pain (β &lt; 0, p &lt; .001).</div></li>
-          <li><span class="dot" style="background:var(--danger)"></span><div><strong>Civil conflict ↑ pain:</strong> Conflict exposure associates with higher pain (p &lt; .001).</div></li>
-          <li><span class="dot" style="background:var(--ok)"></span><div><strong>Education ↓ pain:</strong> Higher educational attainment reduces pain (p &lt; .001).</div></li>
-          <li><span class="dot"></span><div><strong>Age ↑ pain:</strong> Pain increases with age (p &lt; .001).</div></li>
-          <li><span class="dot"></span><div><strong>Gender gap:</strong> Females report higher pain than males (p &lt; .001).</div></li>
-        </ul>
-      </aside>
-    </section>
-
-    <!-- VISUALIZATIONS -->
+    <!-- OVERVIEW -->
     <section class="card">
-      <h2>Visualizations</h2>
-      <p class="meta">Interactive charts based on model results from the study. Replace the numbers in the script with your latest estimates if needed.</p>
-
-      <h3>Main Effects (OLS Coefficients)</h3>
-      <canvas id="coefChart"></canvas>
-
-      <h3>Interaction: Education × Age</h3>
-      <canvas id="ageEduChart"></canvas>
-
-      <h3>Interaction: GDP × Civil Conflict</h3>
-      <canvas id="gdpConflictChart"></canvas>
-      <p class="meta">Note: Coefficients shown are illustrative from the draft tables; for publication use standardized betas or marginal effects.</p>
+      <h2>Project Overview</h2>
+      <p>
+        Chronic pain undermines well-being and productivity globally. Beyond biology, structural determinants like income,
+        conflict exposure, and education stratify who experiences pain and who accesses relief. This project reframes chronic
+        pain through a socio-environmental lens, integrating country-level capacity with individual-level risk factors to
+        explain variation in body-pain intensity.
+      </p>
     </section>
 
     <!-- DOWNLOADS -->
     <section id="downloads" class="card">
       <h2>Downloads & Links</h2>
-      <p class="meta">Swap these placeholders with your real links (Google Drive / Dropbox / GitHub releases).</p>
+      <p class="meta">Click below to view or download the project documents.</p>
       <p>
-        <a class="btn" href="#" target="_blank" rel="noopener">📄 Final Project Summary (DOCX)</a>
-       <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/55320d1a249c9be7b30fd3b5bb38a42e18011110/Final%20Draft_Thae.docx" target="_blank" rel="noopener">
-  📘 Full Project Draft (DOCX)
-</a>
-
-        <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Project%20Summary.docx" target="_blank" rel="noopener">📄 Project Summary (DOCX)</a>
+        <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Final%20Draft_Thae.docx" target="_blank" rel="noopener">📘 Full Project Draft (DOCX)</a>
       </p>
     </section>
 
     <!-- ABOUT -->
-    <section class="grid grid-2">
-      <article class="card">
-        <h3>About the Author</h3>
-        <p><strong>Thae Yadanar Oo</strong> — Data Analyst (Webologix INC), M.S. in Business Analytics (SUNY Albany). Experience across SQL, Python, Power BI/Tableau, and applied econometrics. Interests include equitable health analytics, human-centered operations, and evidence-based policy.</p>
-        <p class="meta">Albany, NY • English & Burmese • Email: thaeyadanaroo19960524@gmail.com</p>
-      </article>
-      <aside class="card">
-        <h3>How to Cite</h3>
-        <p>Oo, T.Y. (2024). <em>Exploring the Roots of Chronic Pain: Socioeconomic & Environmental Insights</em>. Master’s capstone, University at Albany (SUNY).</p>
-        <p class="meta">This page summarizes methods and results; see linked documents for full details and tables.</p>
-      </aside>
+    <section class="card">
+      <h3>About the Author</h3>
+      <p><strong>Thae Yadanar Oo</strong> — Data Analyst (Webologix INC), M.S. in Business Analytics (SUNY Albany). Experience across SQL, Python, Power BI/Tableau, and applied econometrics.</p>
+      <p class="meta">Albany, NY • Email: thaeyadanaroo19960524@gmail.com</p>
     </section>
   </main>
 
   <footer>
-    <div class="container">© <span id="yr"></span> Thae Yadanar Oo • Built with HTML/CSS + Chart.js • Ready for GitHub Pages / Netlify</div>
+    © <span id="yr"></span> Thae Yadanar Oo • Hosted on GitHub Pages
   </footer>
 
-  <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script>
-    // Footer year
     document.getElementById('yr').textContent = new Date().getFullYear();
-
-    // ===== 1) Main Effects Bar Chart =====
-    // Labels: GDP, Age, Education, Female, Civil conflict
-    const coefData = {
-      labels: ['log GDP per capita', 'Age', 'Education (ordinal)', 'Female (1)', 'Civil conflict (1)'],
-      datasets: [{
-        label: 'OLS coefficient (β) on body pain (1–5)',
-        data: [-0.0282, 0.0168, -0.0644, 0.2242, 0.2415], // <-- replace with your values if needed
-        backgroundColor: ['#38d39f','#ffd166','#a47cff','#ff7b7b','#6aa8ff']
-      }]
-    };
-    new Chart(document.getElementById('coefChart'), {
-      type: 'bar',
-      data: coefData,
-      options: { responsive: true, scales: { y: { beginAtZero: true } } }
-    });
-
-    // ===== 2) Education × Age Interaction (illustrative) =====
-    // Option A: plug in your predicted values directly
-    // const ages = [25, 35, 45, 55];
-    // const lowEdu  = [2.05, 2.25, 2.45, 2.70];
-    // const highEdu = [1.90, 2.00, 2.15, 2.30];
-
-    // Option B: simple formulas using your draft's coefficients
-    const ages = [25, 35, 45, 55];
-    const lowEdu  = ages.map(a => 1.7 + 0.0212*(a-25));                    // steeper slope
-    const highEdu = ages.map(a => 1.6 + (0.0212-0.0014*5)*(a-25));         // flatter slope
-
-    new Chart(document.getElementById('ageEduChart'), {
-      type: 'line',
-      data: {
-        labels: ages.map(a => a + 'y'),
-        datasets: [
-          { label: 'Lower education', data: lowEdu, borderColor: '#ff7b7b', fill:false, tension:0.3 },
-          { label: 'Higher education', data: highEdu, borderColor: '#6aa8ff', fill:false, tension:0.3 }
-        ]
-      },
-      options: { responsive: true, plugins: { legend: { position:'bottom' } }, scales: { y: { beginAtZero:false } } }
-    });
-
-    // ===== 3) GDP × Conflict Interaction (illustrative grouped means) =====
-    const gdpCats = ['Low GDP', 'Mid GDP', 'High GDP']; // edit labels if needed
-    const noConflict = [2.4, 2.2, 2.0]; // <-- replace with your values
-    const conflict   = [2.9, 2.6, 2.3]; // <-- replace with your values
-
-    new Chart(document.getElementById('gdpConflictChart'), {
-      type: 'bar',
-      data: {
-        labels: gdpCats,
-        datasets: [
-          { label: 'No conflict', data: noConflict, backgroundColor:'#38d39f' },
-          { label: 'Conflict',    data: conflict,   backgroundColor:'#ff7b7b' }
-        ]
-      },
-      options: { responsive:true, plugins:{ legend:{ position:'bottom' } }, scales:{ y:{ beginAtZero:false } } }
-    });
-  </script> <!-- rebuild -->
+  </script>
 </body>
 </html>
