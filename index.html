@@ -1,117 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Exploring the Roots of Chronic Pain – Portfolio | Thae Yadanar Oo</title>
-  <meta name="description" content="Portfolio summary of a master's capstone exploring socioeconomic and environmental determinants of chronic pain using the World Health Survey (n=54,019)." />
-  <meta name="author" content="Thae Yadanar Oo" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chronic Pain Research Portfolio - Thae Yadanar Oo</title>
   <style>
-    :root{
-      --bg:#0b1020; --text:#e8ecf7; --muted:#a8b0c6; --card:#121731;
-      --accent:#6aa8ff; --accent2:#a47cff; 
-      --radius:16px;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0b0f1a;
+      color: #fff;
+      margin: 0;
+      padding: 0;
     }
-    *{box-sizing:border-box}
-    body{
-      margin:0; font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
-      background: var(--bg);
-      color:var(--text); line-height:1.6;
+    header {
+      background: #141a2e;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    a{color:var(--accent); text-decoration:none}
-    a:hover{text-decoration:underline}
-    .container{ width:min(900px,92%); margin-inline:auto }
-    header{
-      position:sticky; top:0; z-index:20; 
-      background:rgba(11,16,32,0.9);
-      border-bottom:1px solid rgba(255,255,255,0.06);
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
     }
-    .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0 }
-    .brand{ font-weight:800; letter-spacing:.2px }
-    .btn{ display:inline-flex; align-items:center; gap:10px; padding:10px 14px; border-radius:12px;
-          border:1px solid rgba(255,255,255,0.12); color:var(--text); background:rgba(255,255,255,0.05); font-weight:600 }
-    .btn:hover{ box-shadow:0 0 0 3px rgba(106,168,255,.25) }
-    .pill{ display:inline-block; padding:4px 10px; border:1px solid rgba(255,255,255,0.12); border-radius:999px; font-size:12px; color:var(--muted) }
-
-    .hero{ padding:40px 0 18px }
-    h1{ font-size:clamp(28px, 4vw, 38px); line-height:1.15; margin:6px 0 6px }
-    .subtitle{ color:var(--muted); max-width:800px }
-    .badges{ display:flex; flex-wrap:wrap; gap:10px; margin-top:16px }
-    .badge{ font-size:13px; color:var(--text); border:1px solid rgba(255,255,255,0.12); padding:6px 10px; border-radius:999px; background:rgba(255,255,255,0.04) }
-
-    .card{ background:var(--card); border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius); padding:22px; margin-bottom:20px }
-    .card h2,.card h3{ margin:0 0 8px }
-    .meta{ color:var(--muted); font-size:14px }
-
-    footer{ border-top:1px solid rgba(255,255,255,0.08); margin-top:40px; padding:28px 0; color:var(--muted); font-size:14px; text-align:center }
+    nav a {
+      margin-left: 1rem;
+      text-decoration: none;
+      background: #1e90ff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .card {
+      background: #1a2238;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .btn {
+      display: inline-block;
+      margin: 0.5rem 0.5rem 0 0;
+      background: #1e90ff;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      background: #141a2e;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="brand">Thae Yadanar Oo</div>
-      <nav>
-        <a class="btn" href="#downloads">Downloads</a>
-        <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx" target="_blank" rel="noopener">📄 Resume</a>
-        <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 LinkedIn</a>
-      </nav>
-    </div>
-  </header>
 
-  <main class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <span class="pill">Master’s Capstone • University at Albany (SUNY)</span>
-      <h1>Exploring the Roots of Chronic Pain: Socioeconomic & Environmental Insights</h1>
-      <p class="subtitle">
-        A macro–micro analysis using the World Health Survey (n = 54,019) to quantify how GDP per capita, civil conflict,
-        education, age, and gender shape self-reported body pain and chronic pain risk. Methods include OLS, logistic regression,
-        and interaction modeling.
-      </p>
-      <div class="badges">
-        <span class="badge">Dataset: World Health Survey</span>
-        <span class="badge">Methods: OLS, Logistic, Interactions</span>
-        <span class="badge">Scope: 50k+ respondents</span>
-        <span class="badge">Focus: Equity-centered policy</span>
-      </div>
-    </section>
+<header>
+  <h1>Thae Yadanar Oo</h1>
+  <nav>
+    <a class="btn" href="#downloads">Downloads</a>
+    <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx" target="_blank" rel="noopener">📄 Resume</a>
+    <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+  </nav>
+</header>
 
-    <!-- OVERVIEW -->
-    <section class="card">
-      <h2>Project Overview</h2>
-      <p>
-        Chronic pain undermines well-being and productivity globally. Beyond biology, structural determinants like income,
-        conflict exposure, and education stratify who experiences pain and who accesses relief. This project reframes chronic
-        pain through a socio-environmental lens, integrating country-level capacity with individual-level risk factors to
-        explain variation in body-pain intensity.
-      </p>
-    </section>
+<div class="container">
+  <section class="card">
+    <h2>Project Overview</h2>
+    <p>
+      Chronic pain undermines well-being and productivity globally. Beyond biology, structural determinants like income, conflict exposure, and education stratify who experiences pain and who accesses relief.
+      This project reframes chronic pain through a socio-environmental lens, integrating country-level capacity with individual-level risk factors to explain variation in body-pain intensity.
+    </p>
+  </section>
 
-    <!-- DOWNLOADS -->
-    <section id="downloads" class="card">
-      <h2>Downloads & Links</h2>
-      <p class="meta">Click below to view or download the project documents.</p>
-      <p>
-        <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Project%20Summary.docx" target="_blank" rel="noopener">📄 Project Summary (DOCX)</a>
-        <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Final%20Draft_Thae.docx" target="_blank" rel="noopener">📘 Full Project Draft (DOCX)</a>
-      </p>
-    </section>
+  <section id="downloads" class="card">
+    <h2>Downloads & Links</h2>
+    <p>Click below to view or download the project documents.</p>
+    <p>
+      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Project%20Summary.docx" target="_blank" rel="noopener">📄 Project Summary (DOCX)</a>
+      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Final%20Draft_Thae.docx" target="_blank" rel="noopener">📘 Full Project Draft (DOCX)</a>
+      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx" target="_blank" rel="noopener">📄 Resume (DOCX)</a>
+      <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+    </p>
+  </section>
 
-    <!-- ABOUT -->
-    <section class="card">
-      <h3>About the Author</h3>
-      <p><strong>Thae Yadanar Oo</strong> — Data Analyst (Webologix INC), M.S. in Business Analytics (SUNY Albany). Experience across SQL, Python, Power BI/Tableau, and applied econometrics.</p>
-      <p class="meta">Albany, NY • Email: thaeyadanaroo19960524@gmail.com</p>
-    </section>
-  </main>
+  <section class="card">
+    <h2>About the Author</h2>
+    <p>
+      <strong>Thae Yadanar Oo</strong> — Data Analyst (Webologix INC), M.S. in Business Analytics (SUNY Albany).  
+      Experienced in SQL, Python, Power BI/Tableau, and applied econometrics.
+    </p>
+    <p>Albany, NY • Email: thaeyadanaroo19960524@gmail.com</p>
+  </section>
+</div>
 
-  <footer>
-    © <span id="yr"></span> Thae Yadanar Oo • Hosted on GitHub Pages
-  </footer>
+<footer>
+  © 2025 Thae Yadanar Oo • Hosted on GitHub Pages
+</footer>
 
-  <script>
-    document.getElementById('yr').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
