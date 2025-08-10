@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exploring the Roots of Chronic Pain – Portfolio | Thae Yadanar Oo</title>
+  <meta name="description" content="Portfolio summary of a master's capstone exploring socioeconomic and environmental determinants of chronic pain using the World Health Survey (n=54,019)." />
+  <meta name="author" content="Thae Yadanar Oo" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#121731;
+      --text:#e8ecf7;
+      --muted:#a8b0c6;
+      --accent:#6aa8ff;
+      --accent-2:#a47cff;
+      --ok:#38d39f;
+      --warn:#ffd166;
+      --danger:#ff7b7b;
+      --ring: 0 0 0 3px rgba(106,168,255,0.25);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text);
+      background: radial-gradient(1200px 800px at 10% -10%, #1a2552 0%, transparent 60%),
+                  radial-gradient(1000px 600px at 110% 10%, #2b154b 0%, transparent 60%),
+                  var(--bg);
+      line-height:1.6;
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{ text-decoration:underline }
+    .container{ width:min(1100px, 92%); margin-inline:auto }
+    header{
+      position:sticky; top:0; z-index:20; backdrop-filter:saturate(160%) blur(10px);
+      background:linear-gradient(to bottom, rgba(11,16,32,0.9), rgba(11,16,32,0.4));
+      border-bottom:1px solid rgba(255,255,255,0.06);
+    }
+    .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0 }
+    .brand{ display:flex; align-items:center; gap:12px; font-weight:700; letter-spacing:0.2px }
+    .brand .avatar{ width:36px; height:36px; border-radius:50%; background:linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow:0 6px 30px rgba(106,168,255,0.35); }
+    .btn{
+      display:inline-flex; align-items:center; gap:10px; padding:10px 14px;
+      border-radius:12px; border:1px solid rgba(255,255,255,0.12);
+      background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      color:var(--text); text-decoration:none; font-weight:600;
+    }
+    .btn:hover{ box-shadow:var(--ring) }
+
+    .hero{ padding:72px 0 28px }
+    .title{ font-size:clamp(28px, 3.6vw, 44px); line-height:1.15; margin:10px 0 }
+    .subtitle{ color:var(--muted); max-width:900px }
+    .badges{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px }
+    .badge{ font-size:13px; color:var(--text); border:1px solid rgba(255,255,255,0.12); padding:6px 10px; border-radius:999px; background:rgba(255,255,255,0.04) }
+
+    .grid{ display:grid; gap:22px }
+    @media(min-width:980px){ .grid-2{ grid-template-columns: 1.2fr 0.8fr } }
+
+    .card{ background:linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+           border:1px solid rgba(255,255,255,0.08); border-radius:var(--radius); padding:22px }
+    .card h3{ margin:0 0 8px; font-size:20px }
+    .meta{ display:flex; gap:14px; flex-wrap:wrap; color:var(--muted); font-size:14px }
+
+    .section{ padding:22px 0 }
+
+    .kpi{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:10px }
+    .kpi .item{ background:#0e1430; border:1px solid rgba(255,255,255,0.08); border-radius:14px; padding:14px }
+    .kpi .num{ font-weight:800; font-size:22px }
+    .kpi .label{ color:var(--muted); font-size:13px }
+
+    .list{ display:grid; gap:10px; margin:0; padding:0; list-style:none }
+    .list li{ display:flex; gap:10px; align-items:flex-start }
+    .dot{ width:9px; height:9px; margin-top:9px; border-radius:50%; background:var(--accent) }
+
+    .callout{ display:flex; align-items:center; gap:12px; padding:14px; border-radius:14px; background:rgba(56,211,159,0.08); border:1px solid rgba(56,211,159,0.25) }
+
+    footer{ border-top:1px solid rgba(255,255,255,0.08); margin-top:50px; padding:28px 0; color:var(--muted); font-size:14px }
+    .downloads a.btn{ margin-right:10px; margin-bottom:10px }
+
+    .pill{ display:inline-block; padding:4px 10px; border:1px solid rgba(255,255,255,0.12); border-radius:999px; font-size:12px; color:var(--muted) }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="avatar" aria-hidden="true"></span> <span>Thae Yadanar Oo</span></div>
+      <nav>
+        <a class="btn" href="#downloads">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="pill">Master’s Capstone • University at Albany (SUNY)</span>
+      <h1 class="title">Exploring the Roots of Chronic Pain: Socioeconomic & Environmental Insights</h1>
+      <p class="subtitle">A mixed macro–micro analysis using the World Health Survey (n = 54,019) to quantify how GDP per capita, civil conflict, education, age, and gender shape self‑reported body pain and chronic pain risk. Methods include OLS, logistic regression, and interaction modeling.</p>
+      <div class="badges">
+        <span class="badge">Dataset: World Health Survey</span>
+        <span class="badge">Methods: OLS, Logistic, Interactions</span>
+        <span class="badge">Scope: 50k+ respondents</span>
+        <span class="badge">Focus: Equity‑centered policy</span>
+      </div>
+    </section>
+
+    <section class="grid grid-2 section">
+      <article class="card">
+        <h3>Project Overview</h3>
+        <p>Chronic pain undermines well‑being and productivity globally. Beyond biology, structural determinants like income, conflict exposure, and education stratify who experiences pain and who accesses relief. This project reframes chronic pain through a socio‑environmental lens, integrating country‑level capacity with individual‑level risk factors to explain variation in body‑pain intensity.</p>
+        <div class="kpi" role="group" aria-label="Key metrics">
+          <div class="item"><div class="num">54,019</div><div class="label">Participants</div></div>
+          <div class="item"><div class="num">5</div><div class="label">Primary predictors</div></div>
+          <div class="item"><div class="num">2</div><div class="label">Model families</div></div>
+        </div>
+      </article>
+      <aside class="card">
+        <h3>Research Questions</h3>
+        <ul class="list">
+          <li><span class="dot"></span><div>Do wealthier countries (higher GDP per capita) report <em>lower</em> average body pain?</div></li>
+          <li><span class="dot"></span><div>Does living amid <em>civil conflict</em> elevate pain risk net of demographics?</div></li>
+          <li><span class="dot"></span><div>How do <em>education</em>, <em>age</em>, and <em>gender</em> shape pain outcomes and interact?</div></li>
+        </ul>
+        <div class="callout" style="margin-top:14px">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2l9 4-9 4-9-4 9-4zm0 8l9 4-9 4-9-4 9-4zm0 8l9 4-9 4-9-4 9-4z" stroke="currentColor"/></svg>
+          <div><strong>Dependent variable:</strong> 1–5 body pain score (higher = worse)</div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="grid grid-2 section">
+      <article class="card">
+        <h3>Data & Methodology</h3>
+        <p><strong>Data:</strong> World Health Survey; individuals aged 20–60 with country tags. Key variables: log GDP per capita, civil conflict (0/1), education (ordinal), age, gender (female=1), body pain (1–5).</p>
+        <p><strong>Models:</strong> OLS for continuous pain scores; logistic for binary chronic‑pain risk; interaction terms to test moderating effects (Age×Education, Conflict×GDP, Age×Gender). All models include controls and robust inference.</p>
+        <p class="meta">Statistical focus: effect sizes, standard errors, and joint significance across covariates; visualization via correlation heatmaps and grouped means.</p>
+      </article>
+      <aside class="card">
+        <h3>Headline Results</h3>
+        <ul class="list">
+          <li><span class="dot"></span><div><strong>GDP per capita ↓ pain:</strong> Higher GDP significantly predicts lower body pain (β &lt; 0, p &lt; .001).</div></li>
+          <li><span class="dot" style="background:var(--danger)"></span><div><strong>Civil conflict ↑ pain:</strong> Conflict exposure associates with higher pain (p &lt; .001).</div></li>
+          <li><span class="dot" style="background:var(--ok)"></span><div><strong>Education ↓ pain:</strong> Higher educational attainment reduces pain (p &lt; .001).</div></li>
+          <li><span class="dot"></span><div><strong>Age ↑ pain:</strong> Pain increases with age (p &lt; .001).</div></li>
+          <li><span class="dot"></span><div><strong>Gender gap:</strong> Females report higher pain than males (p &lt; .001).</div></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="grid grid-2 section">
+      <article class="card">
+        <h3>Interaction Effects</h3>
+        <ul class="list">
+          <li><span class="dot"></span><div><strong>Education × Age:</strong> Education <em>attenuates</em> age‑related increases in pain (negative interaction).</div></li>
+          <li><span class="dot"></span><div><strong>GDP × Conflict:</strong> Wealth partly <em>buffers</em> conflict’s pain burden (negative interaction).</div></li>
+          <li><span class="dot"></span><div><strong>Age × Gender:</strong> Pain rises faster with age for females.</div></li>
+        </ul>
+      </article>
+      <aside class="card">
+        <h3>Policy Implications</h3>
+        <ul class="list">
+          <li><span class="dot"></span><div>Scale <strong>equity‑focused pain services</strong> in low‑GDP and conflict‑affected settings.</div></li>
+          <li><span class="dot"></span><div>Invest in <strong>health literacy & education</strong> as preventative infrastructure.</div></li>
+          <li><span class="dot"></span><div>Adopt <strong>gender‑ and age‑sensitive</strong> pain management pathways.</div></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="downloads" class="section">
+      <div class="card downloads">
+        <h3>Downloads & Links</h3>
+        <p class="meta">Replace the placeholders with your live links (Google Drive / Dropbox / GitHub).</p>
+        <p>
+          <a class="btn" href="#" target="_blank" rel="noopener">📄 Final Project Summary (DOCX)</a>
+          <a class="btn" href="#" target="_blank" rel="noopener">📘 Full Project Draft (DOCX)</a>
+          <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+        </p>
+        <p class="meta">Optional: host this page on GitHub Pages or Netlify and share the URL in applications and emails.</p>
+      </div>
+    </section>
+
+    <section class="grid grid-2 section">
+      <article class="card">
+        <h3>About the Author</h3>
+        <p><strong>Thae Yadanar Oo</strong> — Data Analyst (Webologix INC), M.S. in Business Analytics (SUNY Albany). Experience across SQL, Python, Power BI/Tableau, and applied econometrics. Interests include equitable health analytics, human‑centered operations, and evidence‑based policy.</p>
+        <ul class="meta">
+          <li>Albany, NY • English & Burmese</li>
+          <li>Email: thaeyadanaroo19960524@gmail.com</li>
+        </ul>
+      </article>
+      <aside class="card">
+        <h3>How to Cite</h3>
+        <p>Oo, T.Y. (2024). <em>Exploring the Roots of Chronic Pain: Socioeconomic & Environmental Insights</em>. Master’s capstone, University at Albany (SUNY).</p>
+        <p class="meta">This page summarizes methods and results; see linked documents for full details and tables.</p>
+      </aside>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="yr"></span> Thae Yadanar Oo • Built with clean HTML/CSS • Ready for GitHub Pages / Netlify</div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
