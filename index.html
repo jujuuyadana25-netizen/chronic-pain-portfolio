@@ -1,67 +1,116 @@
-# Exploring the Roots of Chronic Pain: Socioeconomic & Environmental Insights
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Exploring the Roots of Chronic Pain – Thae Yadanar Oo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bg:#0b0f1a;--card:#141a2e;--text:#e9eef7;--muted:#a8b0c6;--accent:#4ea1ff;--radius:14px}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial}
+    .container{max-width:900px;margin:auto;padding:28px 20px}
+    header{position:sticky;top:0;z-index:10;background:#0d1222cc;border-bottom:1px solid #ffffff12}
+    .nav{max-width:900px;margin:auto;display:flex;gap:10px;align-items:center;justify-content:space-between;padding:12px 20px}
+    .brand{font-weight:800}
+    .btn{display:inline-block;background:#223055;border:1px solid #ffffff22;color:var(--text);padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn:hover{outline:3px solid #4ea1ff33}
+    h1{font-size:clamp(26px,3.4vw,40px);line-height:1.2;margin:8px 0 6px}
+    h2{margin:0 0 10px}
+    .card{background:var(--card);border:1px solid #ffffff14;border-radius:var(--radius);padding:22px;margin:16px 0}
+    .muted{color:var(--muted)}
+    ul{margin:10px 0 0 18px}
+    footer{border-top:1px solid #ffffff14;margin-top:28px;padding:20px 0;color:var(--muted);text-align:center}
+    a{color:var(--accent)}
+  </style>
+</head>
+<body>
 
-**Author:** Thae Yadanar Oo  
-**Degree:** M.S. in Business Analytics, University at Albany (SUNY)  
-**Dataset:** World Health Survey (n = 54,019)  
-**Methods:** OLS Regression, Logistic Regression, Interaction Effect Analysis
+<header>
+  <div class="nav">
+    <div class="brand">Thae Yadanar Oo</div>
+    <div>
+      <a class="btn" href="#links">Downloads</a>
+      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx" target="_blank" rel="noopener">📄 Resume</a>
+      <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+    </div>
+  </div>
+</header>
 
----
+<main class="container">
+  <section class="card">
+    <h1>Exploring the Roots of Chronic Pain: Socioeconomic & Environmental Insights</h1>
+    <p><strong>Author:</strong> Thae Yadanar Oo<br>
+       <strong>Degree:</strong> M.S. in Business Analytics, University at Albany (SUNY)<br>
+       <strong>Dataset:</strong> World Health Survey (n = 54,019)<br>
+       <strong>Methods:</strong> OLS Regression, Logistic Regression, Interaction Effect Analysis
+    </p>
+  </section>
 
-## 📌 Overview
-This portfolio presents my Master’s capstone research project, which investigates the socioeconomic and environmental determinants of chronic pain across individuals and countries. While chronic pain is often approached through biomedical perspectives, this study highlights the impact of structural and demographic factors such as GDP per capita, civil conflict, education, age, and gender.
+  <section class="card">
+    <h2>📌 Overview</h2>
+    <p>This portfolio presents my Master’s capstone research project, which investigates the socioeconomic and environmental determinants of chronic pain across individuals and countries. While chronic pain is often approached through biomedical perspectives, this study highlights the impact of structural and demographic factors such as GDP per capita, civil conflict, education, age, and gender.</p>
+  </section>
 
----
+  <section class="card">
+    <h2>🎯 Research Objectives</h2>
+    <ul>
+      <li>Assess whether higher GDP per capita is associated with lower chronic pain.</li>
+      <li>Evaluate the impact of living in civil conflict zones on pain levels.</li>
+      <li>Determine how education, age, and gender influence pain prevalence.</li>
+      <li>Explore interaction effects between socioeconomic and demographic factors.</li>
+    </ul>
+  </section>
 
-## 🎯 Research Objectives
-- Assess whether higher GDP per capita is associated with lower chronic pain.
-- Evaluate the impact of living in civil conflict zones on pain levels.
-- Determine how education, age, and gender influence pain prevalence.
-- Explore interaction effects between socioeconomic and demographic factors.
+  <section class="card">
+    <h2>📊 Data & Methodology</h2>
+    <p><strong>Data Source:</strong> World Health Survey</p>
+    <p><strong>Population:</strong> Individuals aged 20–60 from multiple countries</p>
+    <p><strong>Variables:</strong> GDP per capita (log), civil conflict (0/1), education (ordinal), age (years), gender (female=1), body pain (1–5)</p>
+    <p><strong>Analytical Methods:</strong> OLS (continuous pain), Logistic (binary risk), Interactions (Age×Education, GDP×Conflict, Age×Gender)</p>
+  </section>
 
----
+  <section class="card">
+    <h2>📈 Key Findings</h2>
+    <ul>
+      <li><strong>GDP per capita</strong> – Higher GDP is significantly linked to lower pain scores.</li>
+      <li><strong>Civil conflict</strong> – Living in conflict zones increases pain prevalence.</li>
+      <li><strong>Education</strong> – Higher education reduces reported pain.</li>
+      <li><strong>Age</strong> – Older individuals report higher pain levels.</li>
+      <li><strong>Gender</strong> – Females report higher pain than males.</li>
+      <li><strong>Interactions</strong> – Education mitigates age-related pain increases; GDP buffers conflict’s impact.</li>
+    </ul>
+  </section>
 
-## 📊 Data & Methodology
-- **Data Source:** World Health Survey
-- **Population:** Individuals aged 20–60 from multiple countries
-- **Variables:**  
-  - GDP per capita (log-transformed)  
-  - Civil conflict status (0/1)  
-  - Education level (ordinal)  
-  - Age (years)  
-  - Gender (female = 1)  
-  - Body pain score (1–5)
-- **Analytical Methods:**  
-  - OLS regression for continuous pain scores  
-  - Logistic regression for binary chronic pain risk  
-  - Interaction models (Age × Education, GDP × Conflict, Age × Gender)
+  <section class="card">
+    <h2>💡 Policy Implications</h2>
+    <ul>
+      <li>Expand healthcare access in low-GDP and conflict-affected regions.</li>
+      <li>Invest in education as a preventative public health measure.</li>
+      <li>Implement gender- and age-specific pain management programs.</li>
+    </ul>
+  </section>
 
----
+  <section id="links" class="card">
+    <h2>🔗 Links</h2>
+    <p>
+      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx" target="_blank" rel="noopener">📄 Download Resume (DOCX)</a>
+      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Project%20Summary.docx" target="_blank" rel="noopener">📄 Download Project Summary (DOCX)</a>
+      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Final%20Draft_Thae.docx" target="_blank" rel="noopener">📘 Download Full Project Draft (DOCX)</a>
+      <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 View LinkedIn</a>
+    </p>
+    <p class="muted">Links open in a new tab and download directly from GitHub.</p>
+  </section>
 
-## 📈 Key Findings
-- **GDP per capita** – Higher GDP is significantly linked to lower pain scores.
-- **Civil conflict** – Living in conflict zones increases pain prevalence.
-- **Education** – Higher education reduces reported pain.
-- **Age** – Older individuals report higher pain levels.
-- **Gender** – Females report higher pain than males.
-- **Interactions** – Education mitigates age-related pain increases; GDP buffers conflict’s impact on pain.
+  <section class="card">
+    <h2>📄 License</h2>
+    <p class="muted">This project is shared for academic and professional purposes. © Thae Yadanar Oo</p>
+  </section>
+</main>
 
----
-
-## 💡 Policy Implications
-- Expand healthcare access in low-GDP and conflict-affected regions.
-- Invest in education as a preventative public health measure.
-- Implement gender- and age-specific pain management programs.
-
----
-
-## 🔗 Links
-- **Resume (DOCX):** [📄 Download Resume](https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx)  
-- **Project Summary (DOCX):** [📄 Download Project Summary](https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Project%20Summary.docx)  
-- **Full Project Draft (DOCX):** [📘 Download Full Project Draft](https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Final%20Draft_Thae.docx)  
-- **LinkedIn Profile:** [🔗 View LinkedIn](https://www.linkedin.com/in/thae-yadanar-oo-198447193/)
-
----
-
-## 📄 License
-This project is shared for academic and professional purposes.  
-© Thae Yadanar Oo
+<footer>
+  © <span id="yr"></span> Thae Yadanar Oo • Hosted on GitHub Pages
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+</body>
+</html>
