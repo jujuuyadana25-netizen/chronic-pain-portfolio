@@ -3,12 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Exploring the Roots of Chronic Pain – Thae Yadanar Oo</title>
+  <title>Chronic Pain Research – Thae Yadanar Oo</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Capstone portfolio: socioeconomic & environmental determinants of chronic pain using the World Health Survey (n=54,019). Methods: OLS, logistic regression, interaction models." />
+  <meta name="author" content="Thae Yadanar Oo" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Chronic Pain Research – Thae Yadanar Oo" />
+  <meta property="og:description" content="Capstone on socioeconomic & environmental determinants of chronic pain using WHS (n=54,019).">
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jujuuyadana25-netizen.github.io/chronic-pain-portfolio/" />
+  <!-- If you add a preview image later, include it here -->
+  <!-- <meta property="og:image" content="https://.../og-image.png" /> -->
+
+  <!-- Favicon (optional) -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
   <style>
     :root{--bg:#0b0f1a;--card:#141a2e;--text:#e9eef7;--muted:#a8b0c6;--accent:#4ea1ff;--radius:14px}
     *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,Arial;line-height:1.6}
     .container{max-width:900px;margin:auto;padding:28px 20px}
     header{position:sticky;top:0;z-index:10;background:#0d1222cc;border-bottom:1px solid #ffffff12}
     .nav{max-width:900px;margin:auto;display:flex;gap:10px;align-items:center;justify-content:space-between;padding:12px 20px}
@@ -22,6 +40,7 @@
     ul{margin:10px 0 0 18px}
     footer{border-top:1px solid #ffffff14;margin-top:28px;padding:20px 0;color:var(--muted);text-align:center}
     a{color:var(--accent)}
+    .btnrow{display:flex;gap:10px;flex-wrap:wrap}
   </style>
 </head>
 <body>
@@ -29,9 +48,9 @@
 <header>
   <div class="nav">
     <div class="brand">Thae Yadanar Oo</div>
-    <div>
+    <div class="btnrow">
       <a class="btn" href="#links">Downloads</a>
-      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx" target="_blank" rel="noopener">📄 Resume</a>
+      <a class="btn" href="https://raw.githubusercontent.com/jujuuyadana25-netizen/chronic-pain-portfolio/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx" target="_blank" rel="noopener">📄 Resume</a>
       <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 LinkedIn</a>
     </div>
   </div>
@@ -40,77 +59,76 @@
 <main class="container">
   <section class="card">
     <h1>Exploring the Roots of Chronic Pain: Socioeconomic & Environmental Insights</h1>
-    <p><strong>Author:</strong> Thae Yadanar Oo<br>
-       <strong>Degree:</strong> M.S. in Business Analytics, University at Albany (SUNY)<br>
+    <p class="muted" style="margin-top:6px">Last updated: <span id="updated"></span></p>
+    <p><strong>Degree:</strong> M.S. in Business Analytics, University at Albany (SUNY)<br>
        <strong>Dataset:</strong> World Health Survey (n = 54,019)<br>
-       <strong>Methods:</strong> OLS Regression, Logistic Regression, Interaction Effect Analysis
+       <strong>Methods:</strong> OLS regression, logistic regression, interaction effect analysis.
     </p>
-  </section>
-
-  <section class="card">
-    <h2>📌 Overview</h2>
-    <p>This portfolio presents my Master’s capstone research project, which investigates the socioeconomic and environmental determinants of chronic pain across individuals and countries. While chronic pain is often approached through biomedical perspectives, this study highlights the impact of structural and demographic factors such as GDP per capita, civil conflict, education, age, and gender.</p>
+    <p>
+      This capstone quantifies how GDP, civil conflict, education, age, and gender shape self-reported body pain using cross-national microdata. Results inform equity-centered policy and access to pain management.
+    </p>
+    <h2>What I Did</h2>
+    <ul>
+      <li>Engineered WHS variables and cleaned 54k+ records; reproducible pipeline.</li>
+      <li>Built OLS/logistic models with interaction terms (Age×Education, GDP×Conflict, Age×Gender).</li>
+      <li>Interpreted coefficients, ran robustness checks, and drafted policy-ready summaries.</li>
+    </ul>
   </section>
 
   <section class="card">
     <h2>🎯 Research Objectives</h2>
     <ul>
-      <li>Assess whether higher GDP per capita is associated with lower chronic pain.</li>
-      <li>Evaluate the impact of living in civil conflict zones on pain levels.</li>
-      <li>Determine how education, age, and gender influence pain prevalence.</li>
-      <li>Explore interaction effects between socioeconomic and demographic factors.</li>
+      <li>Test whether higher GDP per capita is associated with lower chronic pain.</li>
+      <li>Estimate the effect of living in civil conflict zones on pain levels.</li>
+      <li>Quantify how education, age, and gender influence pain prevalence.</li>
+      <li>Probe interaction effects between socioeconomic and demographic factors.</li>
     </ul>
   </section>
 
   <section class="card">
     <h2>📊 Data & Methodology</h2>
-    <p><strong>Data Source:</strong> World Health Survey</p>
-    <p><strong>Population:</strong> Individuals aged 20–60 from multiple countries</p>
-    <p><strong>Variables:</strong> GDP per capita (log), civil conflict (0/1), education (ordinal), age (years), gender (female=1), body pain (1–5)</p>
-    <p><strong>Analytical Methods:</strong> OLS (continuous pain), Logistic (binary risk), Interactions (Age×Education, GDP×Conflict, Age×Gender)</p>
+    <p><strong>Population:</strong> Individuals aged 20–60 from multiple countries.</p>
+    <p><strong>Variables:</strong> GDP per capita (log), civil conflict (0/1), education (ordinal), age (years), gender (female=1), body pain (1–5).</p>
+    <p><strong>Analytical Methods:</strong> OLS (continuous pain), Logistic (binary risk), interactions (Age×Education, GDP×Conflict, Age×Gender).</p>
   </section>
 
   <section class="card">
     <h2>📈 Key Findings</h2>
     <ul>
-      <li><strong>GDP per capita</strong> – Higher GDP is significantly linked to lower pain scores.</li>
-      <li><strong>Civil conflict</strong> – Living in conflict zones increases pain prevalence.</li>
-      <li><strong>Education</strong> – Higher education reduces reported pain.</li>
-      <li><strong>Age</strong> – Older individuals report higher pain levels.</li>
-      <li><strong>Gender</strong> – Females report higher pain than males.</li>
-      <li><strong>Interactions</strong> – Education mitigates age-related pain increases; GDP buffers conflict’s impact.</li>
-    </ul>
-  </section>
-
-  <section class="card">
-    <h2>💡 Policy Implications</h2>
-    <ul>
-      <li>Expand healthcare access in low-GDP and conflict-affected regions.</li>
-      <li>Invest in education as a preventative public health measure.</li>
-      <li>Implement gender- and age-specific pain management programs.</li>
+      <li><strong>GDP per capita:</strong> Higher GDP is associated with lower pain scores.</li>
+      <li><strong>Civil conflict:</strong> Conflict exposure raises pain prevalence.</li>
+      <li><strong>Education:</strong> Higher education reduces reported pain.</li>
+      <li><strong>Age:</strong> Older individuals report higher pain levels.</li>
+      <li><strong>Gender:</strong> Females report higher pain than males.</li>
+      <li><strong>Interactions:</strong> Education mitigates age-related pain increases; GDP buffers conflict’s impact.</li>
     </ul>
   </section>
 
   <section id="links" class="card">
     <h2>🔗 Links</h2>
-    <p>
-      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx" target="_blank" rel="noopener">📄 Download Resume (DOCX)</a>
-      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Project%20Summary.docx" target="_blank" rel="noopener">📄 Download Project Summary (DOCX)</a>
-      <a class="btn" href="https://github.com/jujuuyadana25-netizen/chronic-pain-portfolio/raw/refs/heads/main/Final%20Draft_Thae.docx" target="_blank" rel="noopener">📘 Download Full Project Draft (DOCX)</a>
-      <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 View LinkedIn</a>
-    </p>
-    <p class="muted">Links open in a new tab and download directly from GitHub.</p>
+    <div class="btnrow" style="margin-top:6px">
+      <a class="btn" href="https://raw.githubusercontent.com/jujuuyadana25-netizen/chronic-pain-portfolio/main/Thae_Yadanar_Oo_CV_PhD_Management_Updated.docx" target="_blank" rel="noopener">📄 Resume (DOCX)</a>
+      <a class="btn" href="https://raw.githubusercontent.com/jujuuyadana25-netizen/chronic-pain-portfolio/main/Project%20Summary.docx" target="_blank" rel="noopener">📄 Project Summary (DOCX)</a>
+      <a class="btn" href="https://raw.githubusercontent.com/jujuuyadana25-netizen/chronic-pain-portfolio/main/Final%20Draft_Thae.docx" target="_blank" rel="noopener">📘 Full Project Draft (DOCX)</a>
+      <a class="btn" href="https://www.linkedin.com/in/thae-yadanar-oo-198447193/" target="_blank" rel="noopener">🔗 LinkedIn</a>
+    </div>
+    <p class="muted" style="margin-top:8px">Files open in a new tab and download from GitHub. PDF resume can be added here later.</p>
   </section>
 
   <section class="card">
-    <h2>📄 License</h2>
-    <p class="muted">This project is shared for academic and professional purposes. © Thae Yadanar Oo</p>
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:thaeyadanaroo19960524@gmail.com">thaeyadanaroo19960524@gmail.com</a> · Albany, NY</p>
   </section>
 </main>
 
 <footer>
   © <span id="yr"></span> Thae Yadanar Oo • Hosted on GitHub Pages
 </footer>
-<script>document.getElementById('yr').textContent=new Date().getFullYear()</script>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  // Set to today's date; or change the date string to the last edit date you prefer.
+  document.getElementById('updated').textContent = new Date().toLocaleDateString();
+</script>
 </body>
 </html>
